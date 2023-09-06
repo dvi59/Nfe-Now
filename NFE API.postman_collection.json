@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "cf261b1a-0fd5-47df-872f-0ff68fc7f77f",
+		"name": "NFE API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24924391"
+	},
+	"item": [
+		{
+			"name": "Cadastro NFE",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "345bbf8e-d7f3-421d-8fa7-e159fe24dcb6",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cnpj\":\"53.577.090/0001-11\",\r\n    \"endereco\" : \"Rua A, Centro , Lodrina-PR\",\r\n    \"razaoSocial\":\"Empresa Teste\",\r\n    \"valor\":12,\r\n    \"nrSerie\": \"SP1235\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080\\nfe",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nfe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alteração NFE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cnpj\":\"53.577.090/0001-11\",\r\n    \"endereco\" : \"Rua A, Centro , Lodrina-PR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080\\nfe\\55",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nfe",
+						"55"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete NFE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080\\nfe\\55",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nfe",
+						"55"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recupera Todas NFE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080\\nfe",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nfe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recupera Uma NFE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080\\nfe\\55",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nfe",
+						"55"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
