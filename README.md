@@ -1,5 +1,4 @@
 # Nfe-Now
-Projeto CRUD de Cadastro de NFE desenvolvido em Java com o Framework Spring
 
 O Nfe-Now é uma aplicação que oferece funcionalidades de criação, leitura, atualização e exclusão de Notas Fiscais Eletrônicas (NFEs). Foi desenvolvido utilizando a linguagem de programação Java e o framework Spring.
 
